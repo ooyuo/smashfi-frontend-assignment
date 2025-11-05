@@ -20,6 +20,8 @@ pnpm test
 
 **환경 변수**: `.env.development`, `.env.production` 파일 포함됨 (별도 설정 불필요)
 
+> ⚠️ 실무에서는 API 키를 `.gitignore`에 추가하여 관리
+
 ## 🛠 기술 스택 및 선택 이유
 
 ### Core
