@@ -6,16 +6,16 @@ CoinGecko API를 활용한 실시간 암호화폐 시세 조회 애플리케이�
 
 ```bash
 # 설치
-npm install
+pnpm install
 
 # 개발 서버 실행
-npm run dev
+pnpm dev
 
 # 빌드
-npm run build
+pnpm build
 
 # 테스트
-npm test
+pnpm test
 ```
 
 **환경 변수**: `.env.development`, `.env.production` 파일 포함됨 (별도 설정 불필요)
