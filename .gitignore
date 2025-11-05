@@ -26,3 +26,6 @@ dist-ssr
 
 # Environment files (과제 제출용이므로 .env.development, .env.production은 포함)
 .env
+
+# Test coverage
+coverage
