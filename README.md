@@ -20,15 +20,31 @@ npm test
 
 **환경 변수**: `.env.development`, `.env.production` 파일 포함됨 (별도 설정 불필요)
 
-## 🛠 기술 스택
+## 🛠 기술 스택 및 선택 이유
 
-- **React 18** + **TypeScript** + **Vite**
-- **TanStack Query** - 서버 상태 관리
-- **Zustand** - 클라이언트 상태 관리
-- **TanStack Virtual** - 가상 스크롤
-- **Tailwind CSS** + **shadcn/ui**
-- **Vitest** + **Testing Library** - 테스트
-- **ESLint** + **Prettier** + **Husky**
+### Core
+
+- **React 18** - 컴포넌트 기반 UI 구성 및 효율적인 상태 관리
+- **TypeScript** - 타입 안정성으로 런타임 에러 방지 및 IDE 자동완성 지원
+- **Vite** - Webpack 대비 10배 빠른 개발 서버 및 빌드 속도
+
+### 상태 관리
+
+- **TanStack Query** - API 캐싱, 자동 리패칭, 무한 스크롤(useInfiniteQuery) 등 서버 상태 관리에 최적화
+- **Zustand** - Redux 대비 보일러플레이트 적고 간단한 API로 즐겨찾기/탭 같은 클라이언트 상태 관리
+
+### UI/UX
+
+- **TanStack Virtual** - 수천 개의 코인 데이터도 버벅임 없이 렌더링 (가상화로 DOM 노드 최소화)
+- **Tailwind CSS** - 유틸리티 클래스로 빠른 스타일링, 번들 사이즈 최적화 (미사용 CSS 제거)
+- **shadcn/ui** - Radix UI 기반으로 접근성(ARIA) 기본 지원, 커스터마이징 용이
+
+### 테스트 & 품질
+
+- **Vitest** - Vite와 동일한 설정 공유, Jest 대비 빠른 실행 속도
+- **Testing Library** - 구현 세부사항이 아닌 사용자 동작 중심 테스트
+- **ESLint** + **Prettier** - 팀 코드 일관성 유지 및 잠재적 버그 사전 방지
+- **Husky** - 커밋 전 자동 lint/format으로 품질 저하 방지
 
 ## 📁 프로젝트 구조
 
