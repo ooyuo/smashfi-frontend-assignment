@@ -13,6 +13,9 @@ npm run dev
 
 # 빌드
 npm run build
+
+# 테스트
+npm test
 ```
 
 **환경 변수**: `.env.development`, `.env.production` 파일 포함됨 (별도 설정 불필요)
@@ -24,6 +27,7 @@ npm run build
 - **Zustand** - 클라이언트 상태 관리
 - **TanStack Virtual** - 가상 스크롤
 - **Tailwind CSS** + **shadcn/ui**
+- **Vitest** + **Testing Library** - 테스트
 - **ESLint** + **Prettier** + **Husky**
 
 ## 📁 프로젝트 구조
@@ -59,11 +63,12 @@ src/
 - 📱 **반응형 디자인** - Tailwind CSS
 - ⚡ **성능 최적화** - React.memo, 디바운스
 - 🎭 **UI 시스템** - shadcn/ui
+- 🧪 **테스트** - Vitest, Testing Library
 - 🔧 **코드 품질** - ESLint, Prettier, Husky
 
 ## 💭 개선 가능한 부분
 
-- 테스트 코드 (Unit, E2E)
+- E2E 테스트 (Playwright)
 - 다크모드 토글 UI
 
 ## 🤖 AI 활용
@@ -75,3 +80,4 @@ src/
 - 코드 리뷰 및 리팩토링 제안
 - README 작성 지원
 - Tanstack Query Option 작성 지원
+- 테스트 코드 작성
