@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="coinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#coinGradient)" filter="url(#shadow)"/>
+
+  <!-- Inner decorative circles -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FCD34D" stroke-width="1" opacity="0.6"/>
+  <circle cx="50" cy="50" r="36" fill="none" stroke="#92400E" stroke-width="1.5"/>
+
+  <!-- Cryptocurrency symbol (₿ Bitcoin-like) -->
+  <g transform="translate(50, 50)">
+    <!-- Vertical lines -->
+    <line x1="-3" y1="-28" x2="-3" y2="-18" stroke="#92400E" stroke-width="3" stroke-linecap="round"/>
+    <line x1="3" y1="-28" x2="3" y2="-18" stroke="#92400E" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-3" y1="18" x2="-3" y2="28" stroke="#92400E" stroke-width="3" stroke-linecap="round"/>
+    <line x1="3" y1="18" x2="3" y2="28" stroke="#92400E" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- B shape -->
+    <path d="M -10 -18 L -10 18 L 5 18 Q 15 18 15 10 Q 15 2 5 0 Q 15 0 15 -8 Q 15 -18 5 -18 Z"
+          fill="#92400E"/>
+    <path d="M -3 -12 L 8 -12 Q 10 -12 10 -8 Q 10 -4 8 -4 L -3 -4"
+          fill="#FCD34D"/>
+    <path d="M -3 4 L 8 4 Q 12 4 12 10 Q 12 12 8 12 L -3 12"
+          fill="#FCD34D"/>
+  </g>
+</svg>
